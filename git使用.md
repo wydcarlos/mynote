@@ -1,5 +1,7 @@
 ## git使用
 
+### 基本使用
+
 ```
 首先配置用户信息
 	git config --global user.email "weiyandong2012@163.com"
@@ -50,5 +52,37 @@
 	git status 可以查看
 	git rm filename
 	git commit -m 'message'
+```
+
+### 创建远程仓库
+
+```
+git remote add origin https://safsdagsd.git 添加远程仓库
+git push -u origin master  推送到远程master分支
+
+git pull origin master 更新本地
+    --allow-unrelated-histories  有时需要此命令
+    
+克隆远程仓库
+git clone https://sdfsagsdafg.git
+```
+
+### 分支的创建、合并、删除
+
+```
+创建分支
+	git checkout -b dev  创建并切换到dev分支
+		git branch dev 创建dev分支
+		git checkout dev  切换到dev分支
+
+查看分支
+git branch 查看当前分支
+	
+合并分支
+git checkout master
+git merge dev  先切换master分支 将dev分支合并到master
+
+删除分支
+git branch -d dev  删除dev分支
 ```
 
